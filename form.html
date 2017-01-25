@@ -1,0 +1,80 @@
+<html>
+<style>
+    html{
+        padding: 100px;
+    }
+  .photo{
+      box-shadow: 0 4px 8px 5px green;
+      transition: 2s;
+  }
+  .photo:hover{
+    box-shadow: 0 8px 16px 5px green;
+  }
+  .container{
+      padding: 2px 16px;
+  }
+  .chip{
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 25px;
+    padding: 0 25px;
+    font-size: 40px;
+    color:forestgreen;
+  }
+  .chip img{
+    float:left;
+    height:100px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 0 10px 0 -25px;
+  }
+  .move{
+      padding:100px;
+  }
+  .closebtn{
+    padding-left: 10px;
+    float: right;
+    color: red;
+    font-weight: 200;
+    cursor: pointer;
+  }
+  .closebtn:hover{
+    color: aqua;
+  }
+  .pass{
+  	direction: down;
+  	transition-delay: 2s;
+  	scroll-behavior: slide;
+  	loop:1;
+  }
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+  <title>forms</title>
+</head>
+<body>
+<div class="container">
+<div class="photo" style="width: 200px ;height: auto;">
+  <img src="gj.jpg" class="img-circle" alt="nooo"style="width:200px;height: 200px;"/>
+  <div class="container">
+    <h3>GOWTHAM RAJ</h3>
+    <p>CLASS REPRESENTATIVE</p>
+  </div>
+</div>
+</div>
+<marquee class="pass">
+<div class="move" >
+<div class="chip" style="background-color: blanchedalmond">
+  <img src="gj.jpg" alt="ela" width="96" height="96"/>
+  GOWTHAM RAJ
+
+  <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+</div>
+</div>
+</marquee>
+</body>
+
+</html>
